@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
 body {
     background-color: #f4f5f6;
     color: #333;
@@ -11,6 +22,63 @@ body {
     line-height: 18px;
     font-family: Arial,Helvetica,sans-serif;
     overflow-x: hidden;
+}
+.header_top {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    background-color: #f72210;
+}
+.header-container {
+    z-index: 10;
+    position: relative;
+    max-width: 1310px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.genericon-menu {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 50px;
+    cursor: pointer;
+
+    top: 0;
+    right: 0;
+}
+
+.genericon-menu::before, .genericon-menu::after {
+    content: "";
+}
+.genericon {
+    font-size: 26px;
+    vertical-align: top;
+    text-align: center;
+    
+    font-family: "Genericons";
+    cursor: pointer;
+}
+
+.genericon-menu>span {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.genericon-menu>span, .genericon-menu::before, .genericon-menu::after {
+    display: block;
+    width: 24px;
+    height: 4px;
+    background-color: #fb9a94;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -26,34 +94,42 @@ body {
 }
 
 .top-nav {
-    background-color: #f72210;
-    height: 95px;
-    padding: 20px 10px 15px;
+
     position: relative;
     z-index: 2;
     background-color: #f72210;
 }
 
+.top-nav .col-1 {
+    display: none !important;
+    width: 50%;
+}
+
+.top-nav .col-2 {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    width: 50%;
+}
+
 .middle-nav {
     background-color: #f72210;
-    -webkit-transform: translate(-50%,0);
-    transform: translate(-50%,0);
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    position: relative;
+    padding: 15px;
 }
 
 .bottom-nav {
     background-color: #fff;
+    background-color: white;
+    border-bottom-color: #f4f5f6;
 }
 
+
+
 .brand svg{
-    width: 396px;
-    height: 60px;
-    margin: 10px auto 0;
+    display: block;
+    width: 132px;
+    height: 20px;
     fill: white;
 }
 .hamburger_menu {
@@ -61,17 +137,14 @@ body {
 }
 
 .page-header date {
-    margin-left: 20px;
-    display: block;
-    font: 16px/34px "Roboto Condensed",sans-serif;
-    color: white;
+display: none;
+}
+
+.page-header {
+    background-color: #f72210;
 }
 
 .link2, .link3 {
-    color: white;
-    font-size: 18px;
-    padding-left: 12px;
-    padding-right: 12px;
     position: relative;
     font: bold 14px/14px "Roboto Condensed",sans-serif;
     text-transform: uppercase;
@@ -79,15 +152,60 @@ body {
     padding: 6px 3px;
 }
 
-.link3 {
+.link2, .link2:hover {
+    color: #fff;
+}
+
+.link3, .link3:hover {
     background-color: white;
     color: #f72210;
 }
 
+
 .link3 svg {
-    fill: #f72210;
-    display: inline-block;
-    width: 8px;
-    height: 14px;
-    margin-left: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+.top-nav .col-2 {
+    right: 50px;
+}
+
+}
+@media screen and (max-width: 991px) {
+
+    .top-nav .col-2 {
+        position: absolute;
+        top: 12px;
+        right: 80px;
+    }
+    .bottom-nav {
+        -webkit-box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+    box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+    -moz-transform: translate(100%,0%);
+    -ms-transform: translate(100%,0%);
+    -webkit-transform: translate(100%,0%);
+    transform: translate(100%,0%);
+    filter: alpha(opacity=0);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    padding: 10px 0;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    z-index: 1;
+    }
+}
+
+.header_top_left, .header_top_right {
+    width: 50%;
+}
+
+.header_top_right {
+    display: flex;
+    justify-content: flex-end;
 }
