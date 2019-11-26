@@ -15,6 +15,16 @@ a:hover {
     text-decoration-color: none;
 }
 
+.page_top {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_1_container {
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     background-color: #f4f5f6;
     color: #333;
@@ -208,4 +218,41 @@ display: none;
 .header_top_right {
     display: flex;
     justify-content: flex-end;
+}
+
+.featured_story .content .bloc_title {
+    color: rgba(3,3,3,.4);
+    font: bold 16px/16px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+} 
+
+.featured_story .content article {
+    padding-bottom: 20px;
+}
+
+.featured_story .content article .wrap {
+    position: relative;
+    min-height: 33px;
+    margin-bottom: 10px;
+}
+
+.featured_story .content article .wrap .category {
+
+
+display: block;
+font: bold 17px/16px "Roboto Condensed",sans-serif;
+color: #f72210;
+text-transform: uppercase;
+padding: 8px 15px 9px;
+background-color: rgba(255,255,255,.9);
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: 1;
+
+}
+
+.featured_story .content article .wrap .image {
+    
 }
