@@ -5,6 +5,13 @@
     font-weight: 400;
   }
 
+  @font-face {
+    font-family: "Genericons";
+    src: url("../fonts/Genericons.woff") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -800,4 +807,97 @@ h4 {
 
 .subscribe_bloc .col-right .image {
    width: 100% ;
+}
+
+footer .copyright {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+footer .social {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+footer {
+    border-top: 2px solid #f4f5f6;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .brand svg {
+    display: block;
+    width: 236px;
+    height: 36px;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    fill: #f72210;
+}
+
+footer .social li:first-child {
+    margin-left: 0;
+}
+
+footer .social li {
+    margin-left: 10px;
+    list-style: none;
+}
+
+footer .social .genericon {
+    line-height: 24px;
+}
+
+.genericon-facebook:before {
+    content: "\f203";
+}
+
+.genericon-twitter:before {
+    content: "\f202";
+}
+
+.genericon-instagram:before {
+    content: "\f215";
+}
+
+.genericon-tumblr:before {
+    content: "\f214";
+}
+
+.genericon-linkedin:before {
+    content: "\f207";
+}
+
+.footer_links_edition label{
+    margin-top: 6px;
+    margin-right: 15px;
+
+}
+
+footer .footer_links {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #666;
+}
+
+footer .footer_links li {
+    display: inline-block;
+    padding-right: 20px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+li.leaf {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
