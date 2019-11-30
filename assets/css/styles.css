@@ -180,7 +180,7 @@ body {
     display: none;
 }
 
-.page-header date {
+.page-header .date {
 display: none;
 }
 
@@ -450,7 +450,7 @@ h3 {
 }
 
 .feature2 picture {
-    widows: 397px; 
+    width: 397px; 
     height: 265px; 
     
 }
@@ -1190,7 +1190,7 @@ ul.page_nav li {
 ul.page_nav li:first-child {
 
     border-left-width: 0px;
-    border-left-color: none;
+    border-left-color: transparent;
     border-left-style: none;
 
 }
@@ -1215,7 +1215,7 @@ ul.page_nav li:first-child {
 .genericon-menu {
     display: none;
 }
-.page-header date {
+.page-header .date {
     display: block;
     margin-left: 10px;
     font: 16px/34px "Roboto Condensed",sans-serif;
