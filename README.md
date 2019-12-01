@@ -5,7 +5,7 @@
   <p align="center">
     This project requests students to build a replica of the news site <a href ="http://newsweek.com/">Newsweek.com</a> using the Bootstrap framework.
 
-    <br />    
+    
   </p>
 </p>
 
