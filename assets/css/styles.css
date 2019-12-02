@@ -18,7 +18,9 @@
   box-sizing: border-box;
 }
 
-.culture_items_bloc {
+.culture_items_bloc,
+.page_top,
+.top_1_container {
   display: flex;
   flex-direction: column;
 }
@@ -45,16 +47,6 @@ div a:hover {
 
 h1 a {
   color: black;
-}
-
-.page_top {
-  display: flex;
-  flex-direction: column;
-}
-
-.top_1_container {
-  display: flex;
-  flex-direction: column;
 }
 
 body {
@@ -179,11 +171,9 @@ body {
   fill: white;
 }
 
-.hamburger_menu {
-  display: none;
-}
-
-.page-header .date {
+.hamburger_menu,
+.page-header .date,
+.link3 svg {
   display: none;
 }
 
@@ -218,45 +208,6 @@ body {
 .link3:hover {
   background-color: white;
   color: #f72210;
-}
-
-.link3 svg {
-  display: none;
-}
-
-@media screen and (max-width: 480px) {
-  .top-nav .col-2 {
-    right: 50px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .top-nav .col-2 {
-    position: absolute;
-    top: 12px;
-    right: 80px;
-  }
-
-  .bottom-nav {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
-    box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
-    -moz-transform: translate(100%, 0%);
-    -ms-transform: translate(100%, 0%);
-    -webkit-transform: translate(100%, 0%);
-    transform: translate(100%, 0%);
-    filter: alpha(opacity=0);
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    width: 220px;
-    height: 100vh;
-    padding: 10px 0;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    z-index: 1;
-  }
 }
 
 .header_top_left,
@@ -313,20 +264,9 @@ body {
   margin-bottom: 10px;
 }
 
+.category,
+.feature2 .category,
 .featured_story .content article .wrap .category {
-  display: block;
-  font: bold 17px/16px "Roboto Condensed", sans-serif;
-  color: #f72210;
-  text-transform: uppercase;
-  padding: 8px 15px 9px;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.category {
   display: block;
   font: bold 17px/16px "Roboto Condensed", sans-serif;
   color: #f72210;
@@ -414,7 +354,8 @@ h3 {
   margin-bottom: 6px;
 }
 
-.culture_item picture {
+.culture_item picture,
+.feature2 picture {
   width: 397px;
   height: 265px;
 }
@@ -425,26 +366,8 @@ h3 {
   margin-bottom: 10px;
 }
 
-.feature2 .category {
-  display: block;
-  font: bold 17px/16px "Roboto Condensed", sans-serif;
-  color: #f72210;
-  text-transform: uppercase;
-  padding: 8px 15px 9px;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
 .feature2 article {
   padding-bottom: 20px;
-}
-
-.feature2 picture {
-  width: 397px;
-  height: 265px;
 }
 
 .sponsor {
@@ -642,12 +565,6 @@ h3 {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .magazine .newsletter_title {
-    margin-top: 30px;
-  }
-}
-
 .in_mag {
   width: 100%;
 }
@@ -680,12 +597,8 @@ h5 {
   margin-bottom: 30px;
 }
 
+.picture_gallery .newsletter_title,
 .editors_pick .newsletter_title {
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 12px;
-}
-
-.picture_gallery .newsletter_title {
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 12px;
 }
@@ -758,28 +671,6 @@ h4 {
 .subscribe_bloc .col-left {
   background-color: #f4f5f6;
   padding: 24px 20px 20px;
-}
-
-@media screen and (max-width: 767px) {
-  .subscribe_bloc .col-left,
-  .subscribe_bloc .col-right {
-    text-align: center;
-  }
-
-  .subscribe_bloc .col-left .image {
-    display: inline-block;
-    margin-bottom: 15px;
-  }
-
-  .subscribe_bloc .col-right .image {
-    height: 160px;
-    background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
-  }
-
-  .col-right,
-  .col-left {
-    flex-direction: column;
-  }
 }
 
 .subscribe_bloc .col-left .image {
@@ -892,7 +783,6 @@ footer .social .genericon {
 }
 
 footer .footer_links {
-  display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -916,11 +806,74 @@ li.leaf {
   padding: 0;
 }
 
-@media (max-width: 767px) and (min-width: 481px) {
-  .top_1_side_2_container article .image {
-    width: 258px;
+.header_top_big,
+.header_bottom {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .top-nav .col-2 {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .top-nav .col-2 {
+    position: absolute;
+    top: 12px;
+    right: 80px;
   }
 
+  .bottom-nav {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
+    box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
+    -moz-transform: translate(100%, 0%);
+    -ms-transform: translate(100%, 0%);
+    -webkit-transform: translate(100%, 0%);
+    transform: translate(100%, 0%);
+    filter: alpha(opacity=0);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    padding: 10px 0;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .magazine .newsletter_title {
+    margin-top: 30px;
+  }
+
+  .subscribe_bloc .col-left,
+  .subscribe_bloc .col-right {
+    text-align: center;
+  }
+
+  .subscribe_bloc .col-left .image {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .subscribe_bloc .col-right .image {
+    height: 160px;
+    background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
+  }
+
+  .col-right,
+  .col-left {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+  .top_1_side_2_container article .image,
   .feature3 .ln_image {
     width: 258px;
   }
@@ -1022,12 +975,8 @@ li.leaf {
     flex-direction: row;
   }
 
+  .footer_top_top,
   .footer_top {
-    flex-direction: row;
-    align-items: flex-end;
-  }
-
-  .footer_top_top {
     flex-direction: row;
     align-items: flex-end;
   }
@@ -1058,14 +1007,6 @@ li.leaf {
   }
 }
 
-.header_bottom {
-  display: none;
-}
-
-.header_top_big {
-  display: none;
-}
-
 @media screen and (min-width: 992px) {
   .col-right,
   .subscribe_bloc .col-right .info {
@@ -1077,7 +1018,8 @@ li.leaf {
     width: 100%;
   }
 
-  .header_top {
+  .header_top,
+  .genericon-menu {
     display: none;
   }
 
@@ -1193,10 +1135,6 @@ li.leaf {
   .top_3_container {
     order: 3;
     width: 29%;
-  }
-
-  .genericon-menu {
-    display: none;
   }
 
   .page-header .date {
